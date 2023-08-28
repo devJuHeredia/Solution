@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card {
+    width: 350px;
+    height: 650px;
+    margin: 30px 15px;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-img-mobile {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-img-desktop {
+    display: none;
+}
+
+.Perfume {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.card-texts {
+    padding: 1px 15px;
+    margin: auto;
+    align-content: center;
+}
+
+.text-title {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+
+.text-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 15px 12px;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-prices {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    padding: 15px;
+}
+
+.price-old {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-decoration: line-through;
+    margin-top: 5px;
+    font-size: small;
+}
+.card-button {
+    width: 300px;
+    height: 50px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-style: none;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px){ 
+    .card-img-mobile{
+        display: none;
+    }
+    .card{
+        width: 660px;
+        height: 500px;
+        margin: auto;
+        margin-top: 225px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .card-img-desktop{
+        display: block;
+        width: 330px;
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .card-texts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .text-title{
+        font-size: 39px;
+        padding-left: 5px;
+        padding-right: 25px;
+
+    }
+
+    .text-p{
+        font-size: 17px;
+        padding-left: 5px;
+        padding-right: 25px;
+    }
+    
+}
